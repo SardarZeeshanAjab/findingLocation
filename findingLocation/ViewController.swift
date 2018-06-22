@@ -131,7 +131,7 @@ class ViewController: UIViewController ,CLLocationManagerDelegate,UISearchContro
             annotation.subtitle = "\(city)  \(state)"
                                 }
         mapView.addAnnotation(annotation)
-        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let span = MKCoordinateSpanMake(0.03, 0.03)
         let region = MKCoordinateRegionMake(placemark.coordinate, span)
         mapView.setRegion(region, animated: true)
             }
