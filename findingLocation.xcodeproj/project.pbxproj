@@ -12,7 +12,19 @@
 		7465728F20A1ACB400CDEDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7465728D20A1ACB400CDEDC1 /* Main.storyboard */; };
 		7465729120A1ACB400CDEDC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7465729020A1ACB400CDEDC1 /* Assets.xcassets */; };
 		7465729420A1ACB400CDEDC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7465729220A1ACB400CDEDC1 /* LaunchScreen.storyboard */; };
+		746572A220A1BFFB00CDEDC1 /* findingLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746572A120A1BFFB00CDEDC1 /* findingLocationTests.swift */; };
+		74676CF520A2D67100E4A445 /* LocationSearchTable .swift in Sources */ = {isa = PBXBuildFile; fileRef = 74676CF420A2D67100E4A445 /* LocationSearchTable .swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		746572A420A1BFFB00CDEDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7465727E20A1ACB400CDEDC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7465728520A1ACB400CDEDC1;
+			remoteInfo = findingLocation;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7465728620A1ACB400CDEDC1 /* findingLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findingLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +34,21 @@
 		7465729020A1ACB400CDEDC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7465729320A1ACB400CDEDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7465729520A1ACB400CDEDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7465729F20A1BFFB00CDEDC1 /* findingLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = findingLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		746572A120A1BFFB00CDEDC1 /* findingLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findingLocationTests.swift; sourceTree = "<group>"; };
+		746572A320A1BFFB00CDEDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74676CF420A2D67100E4A445 /* LocationSearchTable .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationSearchTable .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7465728320A1ACB400CDEDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7465729C20A1BFFB00CDEDC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				7465728820A1ACB400CDEDC1 /* findingLocation */,
+				746572A020A1BFFB00CDEDC1 /* findingLocationTests */,
 				7465728720A1ACB400CDEDC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				7465728620A1ACB400CDEDC1 /* findingLocation.app */,
+				7465729F20A1BFFB00CDEDC1 /* findingLocationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +81,22 @@
 			children = (
 				7465728920A1ACB400CDEDC1 /* AppDelegate.swift */,
 				7465728B20A1ACB400CDEDC1 /* ViewController.swift */,
+				74676CF420A2D67100E4A445 /* LocationSearchTable .swift */,
 				7465728D20A1ACB400CDEDC1 /* Main.storyboard */,
 				7465729020A1ACB400CDEDC1 /* Assets.xcassets */,
 				7465729220A1ACB400CDEDC1 /* LaunchScreen.storyboard */,
 				7465729520A1ACB400CDEDC1 /* Info.plist */,
 			);
 			path = findingLocation;
+			sourceTree = "<group>";
+		};
+		746572A020A1BFFB00CDEDC1 /* findingLocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				746572A120A1BFFB00CDEDC1 /* findingLocationTests.swift */,
+				746572A320A1BFFB00CDEDC1 /* Info.plist */,
+			);
+			path = findingLocationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +119,24 @@
 			productReference = 7465728620A1ACB400CDEDC1 /* findingLocation.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7465729E20A1BFFB00CDEDC1 /* findingLocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746572A620A1BFFB00CDEDC1 /* Build configuration list for PBXNativeTarget "findingLocationTests" */;
+			buildPhases = (
+				7465729B20A1BFFB00CDEDC1 /* Sources */,
+				7465729C20A1BFFB00CDEDC1 /* Frameworks */,
+				7465729D20A1BFFB00CDEDC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				746572A520A1BFFB00CDEDC1 /* PBXTargetDependency */,
+			);
+			name = findingLocationTests;
+			productName = findingLocationTests;
+			productReference = 7465729F20A1BFFB00CDEDC1 /* findingLocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +150,11 @@
 					7465728520A1ACB400CDEDC1 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					7465729E20A1BFFB00CDEDC1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7465728520A1ACB400CDEDC1;
 					};
 				};
 			};
@@ -114,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				7465728520A1ACB400CDEDC1 /* findingLocation */,
+				7465729E20A1BFFB00CDEDC1 /* findingLocationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +188,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7465729D20A1BFFB00CDEDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,10 +204,27 @@
 			files = (
 				7465728C20A1ACB400CDEDC1 /* ViewController.swift in Sources */,
 				7465728A20A1ACB400CDEDC1 /* AppDelegate.swift in Sources */,
+				74676CF520A2D67100E4A445 /* LocationSearchTable .swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7465729B20A1BFFB00CDEDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746572A220A1BFFB00CDEDC1 /* findingLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		746572A520A1BFFB00CDEDC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7465728520A1ACB400CDEDC1 /* findingLocation */;
+			targetProxy = 746572A420A1BFFB00CDEDC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7465728D20A1ACB400CDEDC1 /* Main.storyboard */ = {
@@ -298,6 +381,36 @@
 			};
 			name = Release;
 		};
+		746572A720A1BFFB00CDEDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = findingLocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shan.findingLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/findingLocation.app/findingLocation";
+			};
+			name = Debug;
+		};
+		746572A820A1BFFB00CDEDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = findingLocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shan.findingLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/findingLocation.app/findingLocation";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -315,6 +428,15 @@
 			buildConfigurations = (
 				7465729920A1ACB400CDEDC1 /* Debug */,
 				7465729A20A1ACB400CDEDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746572A620A1BFFB00CDEDC1 /* Build configuration list for PBXNativeTarget "findingLocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746572A720A1BFFB00CDEDC1 /* Debug */,
+				746572A820A1BFFB00CDEDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
